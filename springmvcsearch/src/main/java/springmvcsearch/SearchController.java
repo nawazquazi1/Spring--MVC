@@ -24,8 +24,8 @@ public class SearchController {
 	@RequestMapping("/home")
 	public String home() {
 		System.out.println("going to home view..");
-		String str = null;
-		System.out.println(str.length());
+//		String str = null;
+//		System.out.println(str.length());
 		return "home";
 	}
 

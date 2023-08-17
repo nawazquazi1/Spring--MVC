@@ -4,8 +4,6 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-import javax.servlet.http.HttpSession;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,15 +11,17 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
+import jakarta.servlet.http.HttpSession;
+
 @Controller
 public class FileUploadController {
 
 	@RequestMapping("/fileform")
 	public String showUploadForm() {
 		
-		String str=null;
-		System.out.println(str.charAt(0));
-		
+//		String str=null;
+//		System.out.println(str.charAt(0));
+//		
 		return "fileform";
 	}
 
